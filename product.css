@@ -69,6 +69,16 @@ button {
   color: white;
   font-weight: 700;
 }
+button div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button p{
+  font-size:16px;
+  margin:0 10px;
+  margin-left:20px;
+} 
 
 #avatar,
 #plus,
@@ -161,7 +171,10 @@ main {
 #atc {
   width: 45%;
 }
-
+button img{
+  width:20px;
+  height:20px;
+}
 @media (max-width: 850px) {
   main {
     width: 420px;
@@ -201,5 +214,8 @@ main {
   }
   .Mimg {
     height: 300px;
+  }
+  button p{
+    margin-left:100px;
   }
 }
