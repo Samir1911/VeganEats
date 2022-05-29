@@ -18,17 +18,22 @@ nam.innerText=localStorage.name;
 var plus=document.querySelector("#plus");
 var minus=document.querySelector("#minus");
 var quan=document.querySelector("#selected");
+var btn=document.querySelector("#atc");
+
 var q=1;
 plus.addEventListener("click",function(){
     quan.innerText=++q;
+    btn.innerHTML=``;
+    btn.innerText="Add to cart"
 })
 minus.addEventListener("click",function(){
     if(q!=0){
         quan.innerText=--q;
     }
+    btn.innerHTML=``;
+    btn.innerText="Add to cart"
 })
 
-var btn=document.querySelector("#atc");
 btn.addEventListener("click",function(){
     lc=localStorage.cart;
     if(lc===undefined){
@@ -41,5 +46,11 @@ btn.addEventListener("click",function(){
         s+=localStorage.id+":"+localStorage.name+":"+localStorage.price+":"+q+":"+i.length+",";
     }
     localStorage.setItem("cart",s);
+    btn.innerHTML=`<div><p>successfull</p><img src="images/done.png" alt="added to cart"></div>`
     notifing();
+    setTimeout(function(){
+        btn.innerHTML=``;
+        btn.innerText="Add to cart";
+    },2000)
+    clearTimeout();
 })
