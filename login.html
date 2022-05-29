@@ -2,91 +2,11 @@
 <html>   
 <head>  
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-    Body {  
-    /* font-family: "Times New Roman", Times, serif; */
-    height:100vh;
-    background-image: url(images/bg2.jpg); 
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size:cover;
-    display:grid;
-    place-items:center;
-    }
-    header{
-        width:min(1100px,100%);
-        background:white;
-        padding:2px 10px;
-        box-sizing: border-box;
-    }
-    form{
-		width: 350px;
-        background:white;
-        box-shadow:5px 5px 5px rgba(27, 9, 9, 0.8) ;
-    }
-    form *{
-        width:310px;
-    }
-    h1{
-        color:rgb(70, 70, 252);
-        letter-spacing:2px;
-        text-align:center;
-        margin-left:20px;
-    }
-    #box{
-        height:fit-content;
-        width:350px;
-        padding:20px;
-        box-sizing:border-box;
-	}
-    #box div{
-        display:flex;
-        justify-content:space-around;
-        flex-wrap:wrap;
-        height:125px;
-        align-items:center;
-    }
-    button {   
-        background:linear-gradient(to right,rgb(117, 117, 245),rgb(237, 46, 237)); 
-        width:125px;   
-        height:50px;   
-        padding: 15px; 
-        border: none;   
-        cursor: pointer;   
-        border-radius:10px;
-        color:white;
-        font-weight:600;
-        font-size:16px;
-    }    
-    input[type=text], input[type=password] {   
-        width: 310px;   
-        margin: 8px 0;  
-        padding: 12px 20px;   
-        border: 2px solid rgb(248, 239, 2);   
-        box-sizing: border-box;
-        border-radius:5px;   
-    }  
-    button:hover {   
-        opacity: 0.7;   
-    }       
-    #link{
-        text-align:center;
-        color:black;
-        text-decoration:none;
-    }
-    span{
-        color:blue;
-    }
-    @media(max-width:425px){
-        body{
-            background-image:url(images/bg3.jpg);
-        }
-    }
-</style>   
+<link rel="stylesheet" href="form.css">  
 </head>    
 <body> 
     <header></header>
-    <form method="POST">  
+    <form >  
         <h1>User Login</h1> 
         <div class="container" id="box" style="font-size: 20px;">
               
@@ -95,10 +15,10 @@
             <label id="2">Password : </label><br>
             <input id="pass" type="password" placeholder="Enter Password" name="password" required><br><br>
             <div>
-                <button type="submit">Login</button>    
-                <button type="button"> Cancel</button>
+                <button >Login</button>    
+                <button > Cancel</button>
                 <hr>
-                <a href="signup.php" id="link">No Account ?  <span>SignUp</span></a>
+                <a href="signup.html" id="link">No Account ?  <span>SignUp</span></a>
             </div>  
         </div>   
     </form>
