@@ -93,13 +93,14 @@ strike{
   }
   aside {
     position: absolute;
-    background: white;
-    width: 200px;
+    width: 300px;
     flex-direction: column;
     padding: 30px;
     box-sizing: border-box;
+    backdrop-filter: blur(10px);
     z-index: 3;
-    margin-top: 230px;
+    margin-top: 290px;
+    font-weight:600;
   }
   #close {
     width: 25px;
