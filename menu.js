@@ -23,7 +23,7 @@ header.innerHTML=`<a href="index.html" class="home"><h2 id="logo">Vegan Eats</h2
             <div>
                 <a href="cart.html"><img id="cart" src="images/icon-cart.svg" alt="cart"></a>
                 <p id="notify"></p>
-                <img src="images/avatar.png" alt="profile">
+                <a href="login.html"><img src="images/avatar.png" alt="profile"></a>
             </div>
             <img id="menu" src="images/icon-menu.svg" alt="menu">
             <aside>
